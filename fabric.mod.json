@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "magicclient",
+  "version": "1.0-SNAPSHOT",
+  "name": "MagicClient",
+  "description": "The Best crash client",
+  "authors": ["JOnWhite7579"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/magicclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "org.jon.magicclient.Magicclient"
+    ],
+    "client": [
+      "org.jon.magicclient.client.MagicclientClient"
+    ]
+  },
+  "mixins": [
+    "magicclient.mixins.json",
+    {
+      "config": "magiccilent.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": "1.20.1"
+  }
+}
