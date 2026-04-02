@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 public class WebhookTester {
    public static void main(String[] args) {
-      String webhookUrl = "https://discord.com/api/webhooks/1488155619931193365/oD_a-TF4GiHK-NmmQneEaFmhkOvuFlsz84Fje7JfwpmvXfo1AVwbq9rf4CcaWa_VFq-s";
+      String webhookUrl = "nohook";
       System.out.println("Testing Discord webhook...");
       System.out.println("URL: " + webhookUrl);
       String simpleMessage = "{\"content\":\"Test message from WebhookTester - " + System.currentTimeMillis() + "\"}";
